@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>473 MVP Track Club</h1>
-    <img src="https://c4ace590-f37d-4419-94de-bf822a50c0c1-00-3hqn6rled3lzf.kirk.replit.dev/static/mvp_trinidad_trip.jpg" height="250">
+    <img src="https://c4ace590-f37d-4419-94de-bf822a50c0c1-00-3hqn6rled3lzf.kirk.replit.dev/static/mvp_trinidad_trip.jpg" height="250" width="100%">
     <h2>About 473 MVP Track Club</h2>
     <p>
       Lorem ipsum dolor sit amet. Quo tempore magni aut illo repellat non culpa voluptas sit atque provident ea recusandae quia et necessitatibus repellendus est ipsa neque! Ab tenetur tempora ut accusantium dolores et porro dolorem est dignissimos fugit. Est error nostrum id tempora repudiandae eum omnis commodi sit nostrum adipisci eos iure cumque cum impedit voluptas.
@@ -20,7 +20,11 @@
     </p>
 
     <h2> Athletes</h2>
-    <p>TODO - SHow Athletes here</p>
-    <button>Contact us</button>
+    {% for person in persons %}
+      {% include 'persondetails.html' %}
+    {% endfor %}
+    
+    
+    <button class="btn btn-primary">Contact us</button>
   </body>
 </html>
